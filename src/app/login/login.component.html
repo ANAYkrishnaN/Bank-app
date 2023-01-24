@@ -1,0 +1,32 @@
+<div class="text-center mt-2 p-3">
+       <p style="font-size: xxx-large; color: rgb(0, 0, 0); font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">A  . K  .  N</p>
+ <h1 style="font-size: xx-large; color: white;">{{aim}}</h1>
+</div>
+<button class="text-center" onclick="document.getElementById('id01').style.display='block'" ><h1>LOGIN</h1></button>
+
+<!-- The Modal -->
+<div id="id01" class="modal"  >
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+   
+
+    <form>
+    <div class="container w-25 border my-5 p-3" style="background: rgba(57,87,79,0.5); border-radius: 25px;">
+        <h1 class="text-center text-light">Login Page</h1>
+        
+        <div class="mt-2 p-2">
+            <input size="23" name="acnumber" #acnumber type="text" [placeholder]="data" class="form-control" id="acid">
+        </div>
+
+        <div class="mt-2 p-2">
+            <input size="23" name="psw" #psw type="Password" placeholder="Enter Password" class="form-control" id="pid">
+        </div>
+        <div class="text-center mt-2 p-2">
+            <button  type="submit" (click)="login(acnumber,psw)" class="btn btn-success">Login</button>
+           <p> <a  style="text-decoration: double; color: aliceblue; "href="#book">New user? please register</a></p> 
+     </div>
+    </div>
+        </form>
